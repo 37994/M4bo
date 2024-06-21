@@ -30,20 +30,26 @@ header{
     height: 10rem;
     width: 80vw;
     margin-left: 10vw;
-    border-bottom: 1px solid rgb(239, 239, 239);
     font-weight: 500;
     font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.logo{
+        height: 50%;
 }
 
 .headerTop{
-    width: 100%;
+    width: 95%;
     height: 3.9rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-bottom: 1px solid rgb(98, 98, 98);
+    border-bottom: 1px solid var(--color);
 }
-
 
 .headerBar{
     height: 100%;
@@ -60,10 +66,6 @@ header{
         &:hover {
             border-bottom: 0.2rem solid var(--color);
         }
-    }
-
-    & .logo{
-        height: 85%;
     }
 }
 
@@ -111,10 +113,9 @@ header{
 }
 
 .body__main{
-    height: 150rem;
+    height: 185rem;
     width: 80vw;
     margin-left: 10vw;
-    background-color: lightgray;
     padding: 2rem;
     gap: 2rem;
     display: flex;
@@ -123,13 +124,41 @@ header{
     flex-wrap: wrap;
 }
 
-.body__box1{
-    height: 50rem;
-    background: red;
+.slidebar{
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.body__box-wrapper1 {
+.slidebar__box{
+    width: 10rem;
+    height: 13rem;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+    color: var(--color);
+}
+
+.slidebar__img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.body__box1{
+    height: 50rem;
+    margin-top: 2rem;
+    background: red;
+    border-radius: 1rem;
+}
+
+.body__box-wrapper {
+    display: flex;
+    margin-top: 10rem;
     gap: 2rem;
 }
 
@@ -137,12 +166,28 @@ header{
     flex: 1 1 0;
     height: 30rem;
     background: green;
+    border-radius: 1rem;
 }
 
 .body__box3{
     flex: 1 1 0;
-    height: 30rem;
+    height: 50rem;
     background: blue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+
+    & > img {
+        border-radius: 1rem 1rem 0 0;
+        width: 100%;
+    }
+
+    & > p {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 footer{
