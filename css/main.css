@@ -26,23 +26,40 @@ body{
     background-color: var(--background);
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header{
+    margin-left: 10vw;
     height: 10rem;
     width: 80vw;
-    margin-left: 10vw;
     font-weight: 500;
     font-size: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     padding: 1rem;
+    position: sticky;
+    top: 0;
+    background: var(--background);
+}
+
+.header--top--wrapper{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    height: 3rem;
 }
 
 .logo{
-        height: 50%;
+    height: 100%;
 }
 
-.headerTop{
+.header--top{
+    flex: 1;
     width: 95%;
     height: 3.9rem;
     display: flex;
@@ -51,7 +68,7 @@ header{
     border-bottom: 1px solid var(--color);
 }
 
-.headerBar{
+.header--bar{
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -69,21 +86,22 @@ header{
     }
 }
 
-.headerBottom{
+.header--bottom{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
     width: 100%;
 }
 
 #js--darkmodeButton{
     width: 7rem;
     height: 2.5rem;
-    border: 1px solid gray;
+    border: none;
     border-radius: 1rem;
     color: var(--color);
     background: var(--buttonsBackground);
+    /* font-size: 1.5rem; */
+    /* font-weight: bold; */
     cursor: pointer;
 }
 
@@ -93,7 +111,7 @@ header{
     & > input {
         width: 100%;
         height: 2.5rem;
-        border: 1px solid gray;
+        border: none;
         border-radius: 1rem;
         padding-left: 1rem;
         font-size: 1.5rem;
@@ -105,7 +123,7 @@ header{
 #js--login{
     width: 7rem;
     height: 2.5rem;
-    border: 1px solid gray;
+    border: none;
     border-radius: 1rem;
     color: var(--color);
     background: var(--buttonsBackground);
@@ -115,7 +133,6 @@ header{
 .body__main{
     height: 185rem;
     width: 80vw;
-    margin-left: 10vw;
     padding: 2rem;
     gap: 2rem;
     display: flex;
@@ -129,8 +146,14 @@ header{
     height: 15rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
+    gap: 10rem;
+    overflow: hidden;
+
+    &:hover {
+        overflow: visible;
+    }
 }
 
 .slidebar__box{
