@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Lightning Mcqueen",
+        "price": 30,
+        "image": "images/mcqueen.webp"
+    },
+    {
+        "id": 2,
+        "name": "grass",
+        "price": 50,
+        "image": "images/grass.webp"
+    },
+    {
+        "id": 3,
+        "name": "keyboard",
+        "price": 150,
+        "image": "images/keyboard.webp"
+    },
+    {
+        "id": 4,
+        "name": "keys",
+        "price": 25,
+        "image": "images/keys.webp"
+    },
+    {
+        "id": 5,
+        "name": "pen",
+        "price": 10,
+        "image": "images/pen.webp"
+    },
+    {
+        "id": 6,
+        "name": "apple",
+        "price": 5,
+        "image": "images/apple.webp"
+    },
+    {
+        "id": 7,
+        "name": "sausage",
+        "price": 3000,
+        "image": "images/sausage.webp"
+    }
+]

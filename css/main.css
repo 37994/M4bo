@@ -24,12 +24,39 @@ body{
     font-family: "HurmeHEMA","Century Gothic",CenturyGothic,AppleGothic,sans-serif;
     font-size: 1.6rem;
     background-color: var(--background);
+    position: relative;
 }
 
-main{
+.shoppingcart{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    border: none;
+    right: 0;
+    background: var(--buttonsBackground);
+    cursor: pointer;
+
+    & > img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+}
+
+.item-counter{
+    align-self: center;
+    justify-self: center;
+    width: 2rem;
+    height: 2rem;
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding-top: 0.3rem;
+    color: white;
+    background: red;
+    border-radius: 50%;
 }
 
 header{
@@ -42,7 +69,6 @@ header{
     flex-wrap: wrap;
     gap: 1rem;
     padding: 1rem;
-    position: sticky;
     top: 0;
     background: var(--background);
 }
@@ -100,14 +126,12 @@ header{
     border-radius: 1rem;
     color: var(--color);
     background: var(--buttonsBackground);
-    /* font-size: 1.5rem; */
-    /* font-weight: bold; */
     cursor: pointer;
 }
 
-.searchBar{
+.searchbar{
     width: 35rem;
-
+    
     & > input {
         width: 100%;
         height: 2.5rem;
@@ -130,86 +154,175 @@ header{
     cursor: pointer;
 }
 
-.body__main{
-    height: 185rem;
+main{
     width: 80vw;
+    height: 200rem;
+    margin-left: 10vw;
     padding: 2rem;
-    gap: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    flex-wrap: wrap;
+    gap: 4rem;
 }
 
-.slidebar{
+.modBut{
+    border-radius: 2rem;    
+    border: none;
+}
+
+.body__section1{
     width: 100%;
-    height: 15rem;
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
-    align-items: center;
-    gap: 10rem;
-    overflow: hidden;
+    height: 100rem;
+    object-fit: cover;
+    position: relative;
+    cursor: pointer;
 
-    &:hover {
-        overflow: visible;
+    & > img{
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        border: 0.2rem solid black;
+    }
+
+    & > h2{
+        position: absolute;
+        bottom: 7rem;
+        left: 10rem;
+        font-size: 500%;
+        font-weight: bold;
     }
 }
 
-.slidebar__box{
-    width: 10rem;
-    height: 13rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: bolder;
-    color: var(--color);
-}
-
-.slidebar__img{
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-}
-
-.body__box1{
-    height: 50rem;
-    margin-top: 2rem;
-    background: red;
+dialog{
+    top: 5vh;
+    left: 5vw;
     border-radius: 1rem;
 }
 
-.body__box-wrapper {
+.modal__content{
+    width: 90vw;
+    height: 90vh;
+    display: flex ;
+    position: relative;
+    background: var(--background);
+    color: var(--color);
+    
+    & > img{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    & > div{
+        width: 50%;
+        padding: 1rem;
+        
+            & > h2 {
+                width: 100%;
+                height: 4rem;
+                border-bottom: 0.3rem solid var(--color);
+            }
+
+            & > p {
+                padding-top: 2rem; 
+                font-size: 2rem;
+            }
+
+            & > .ATCbut{
+                width: 14rem;
+                height: 7rem;
+                bottom: 1rem;
+                left: 51%;
+                font-size: 150%;
+                position: absolute;
+                background: none;
+                cursor: pointer;
+                border-radius: 1rem;
+                background: red;
+                color: white;
+                border: black;
+            }
+    
+            & > button{
+                width: 12rem;
+                height: 7rem;
+                bottom: 1rem;
+                right: 2rem;
+                font-size: 150%;
+                position: absolute;
+                background: none;
+                cursor: pointer;
+                border-radius: 1rem;
+                background: var(--buttonsBackground);
+                color: var(--color);
+                border: black;
+            }
+    }
+}
+
+.body__section2{
+    width: 100%;
+    height: 40rem;
     display: flex;
-    margin-top: 10rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 2rem;
 }
 
-.body__box2{
-    flex: 1 1 0;
-    height: 30rem;
-    background: green;
-    border-radius: 1rem;
-}
+.section2__items{
+    flex: 1 1;
+    width: 40rem;
+    height: 100%;
+    cursor: pointer;
+    border: 0.2rem solid black;
+    position: relative;
 
-.body__box3{
-    flex: 1 1 0;
-    height: 50rem;
-    background: blue;
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-
-    & > img {
-        border-radius: 1rem 1rem 0 0;
+    & > img{
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2rem;
     }
 
-    & > p {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    & > h2{
+        background: white;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        bottom: 0;
+        left: 1rem;
+        position: absolute;
+    }
+}
+
+.body__section3{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.sect3__items{
+    flex: 1 1;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    background: red;
+    border-radius: 2rem;
+    border: 0.2rem solid black;
+    display: flex;
+    align-items: center;
+
+    & > img{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2rem 0 0 2rem;
+    }
+
+    & > p{
+        color: white;
+        font-size: 200%;
+        padding: 1rem;
     }
 }
 
@@ -218,4 +331,8 @@ footer{
     color: white;
     height: 15rem;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1rem;
 }

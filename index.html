@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -13,6 +13,18 @@
 </head>
 
 <body>
+    <button id="js--scmod-buttonOpen" class="shoppingcart" type="button">
+        <img src="images/sc lightmode.webp" alt="winkelwagen">
+        <div class="item-counter">0</div>
+    </button>
+    <dialog id="js--scmod">
+        <div class="modal__content">
+            <div>
+                <p id="test"></p>
+                <button id="js--scmod-buttonClose" type="button">terug</button>
+            </div>
+        </div>
+    </dialog>
     <header>
         <div class="header--top--wrapper">
             <img class="logo" src="images/Untitled.png" alt="logo van de webshop hema">
@@ -38,8 +50,8 @@
                     <a href="https://www.hema.nl/pas">
                         klantenpas
                     </a>
-                    <a href="shoppingCart.html">
-                        winkelwagen
+                    <a href="https://www.hema.nl/klantenservice">
+                        klantenservice
                     </a>
                 </div>
             </div>
@@ -48,8 +60,8 @@
             <div class="Darkmode">
                 <button id="js--darkmodeButton" type="button">Darkmode</button>
             </div>
-            <div class="searchBar">
-                <input type="search">
+            <div class="searchbar">
+                <input id="" class="searchbar__input" type="text" placeholder="zoek voor producten hier">
             </div>
             <div class="login">
                 <button id="js--login" type="button">Inloggen</button>
@@ -57,84 +69,194 @@
         </div>
     </header>
     <main>
-        <section class="body__main">
-            <div class="slidebar">
-                <div class="slidebar__box">
-                    <img src="images/Untitled.png" alt="" class="slidebar__img">
-                    <p>voorbeeld</p>
-                </div>
-                <div class="slidebar__box">
-                    <img src="images/Untitled.png" alt="" class="slidebar__img">
-                    <p>voorbeeld</p>
-                </div>
-                <div class="slidebar__box">
-                    <img src="images/Untitled.png" alt="" class="slidebar__img">
-                    <p>voorbeeld</p>
-                </div>
-                <div class="slidebar__box">
-                    <img src="images/Untitled.png" alt="" class="slidebar__img">
-                    <p>voorbeeld</p>
-                </div>
-                <div class="slidebar__box">
-                    <img src="images/Untitled.png" alt="" class="slidebar__img">
-                    <p>voorbeeld</p>
-                </div>
-                <div class="slidebar__box">
-                    <img src="images/Untitled.png" alt="" class="slidebar__img">
-                    <p>voorbeeld</p>
-                </div>
-                <div class="slidebar__box">
-                    <img src="images/Untitled.png" alt="" class="slidebar__img">
-                    <p>voorbeeld</p>
-                </div>
-                <div class="slidebar__box">
-                    <img src="images/Untitled.png" alt="" class="slidebar__img">
-                    <p>voorbeeld</p>
-                </div>
+        <button data-title="lighting mcqeen" id="js--names js--modal1-buttonOpen" class="body__section1 modBut" type="button">
+            <img src="images/mcqueen.webp" alt="foto van lighting mcqeen">
+            <h2>Koop Vandaag!</h2>
+        </button>
+            <dialog id="js--modal1">
+                <div class="modal__content">
+                    <img src="images/mcqueen.webp" alt="foto van lighting mcqeen">
+                    <div>
+                        <h2>mcqueen toy</h2>
+                        <p>**Te Koop: Lightning McQueen Speelgoedauto – Het Perfecte Cadeau voor Jonge Racers!**
 
-            </div>
-            <div class="body__box1">
-                <p>image</p>
-            </div>
-            <div class="body__box-wrapper">
-                <div class="body__box2">
+                            Breng de magie van de populaire Disney-Pixar film "Cars" naar je huis met deze prachtige Lightning McQueen speelgoedauto! Deze auto is een must-have voor elke jonge autoliefhebber en fan van de avonturen van Bliksem McQueen. Met zijn iconische rode kleur, opvallende 95 op de zijkant en realistische details, ziet deze speelgoedauto eruit alsof hij zo van het scherm is gereden.
+                            
+                            **Kenmerken:**
+                            - **Gedetailleerd Ontwerp:** Deze Lightning McQueen auto is met precisie gemaakt om er net zo uit te zien als in de film, met al zijn kenmerkende kleuren en stickers.
+                            - **Duurzaam Materiaal:** Gemaakt van hoogwaardig kunststof, is deze auto ontworpen om lang mee te gaan, zelfs bij intensief speelplezier.
+                            - **Geschikt voor Alle Leeftijden:** Hoewel speciaal ontworpen voor kinderen vanaf 3 jaar, zullen ook oudere kinderen en verzamelaars deze auto geweldig vinden.
+                            - **Interactief Spel:** De auto heeft draaiende wielen, zodat kinderen hun eigen races kunnen naspelen en hun verbeelding de vrije loop kunnen laten.
+                            
+                            Of je nu een verzamelaar bent of op zoek bent naar het perfecte cadeau voor een jong kind, deze Lightning McQueen speelgoedauto zal zeker een glimlach op elk gezicht toveren. Grijp je kans om een stukje van de "Cars" magie in huis te halen!
+                            
+                            **Prijs:** €29,99  
+                            **Staat:** Nieuw in de doos
+                            
+                            Neem contact op voor meer informatie of om een bestelling te plaatsen. Mis deze kans niet om een geliefd stukje speelgoed toe te voegen aan je collectie!
+                        </p>
+                        <button data-product="item1" id="js--ATCbutton1" class="ATCbut" type="button">add to cart</button>
+                        <button id="js--modal1-buttonClose" type="button">terug</button>
+                    </div>
+                </div>
+            </dialog>
+        <section class="body__section body__section2">
+            <button data-title="grass" id="js--names js--sect2mod1-buttonOpen" class="section2__items modBut" type="button">
+                <img src="images/grass.webp" alt="foto van grass">
+                <h2>grass</h2>
+            </button>
+            <dialog id="js--sect2mod1">
+                <div class="modal__content">
+                    <img src="images/grass.webp" alt="foto van grass">
+                    <div>
+                        <h2>grass</h2>
+                        <p>**Te koop: Hoogwaardig Gras voor een Weelderig Groen Gazon**
 
+                            Bent u op zoek naar de perfecte grasmat om uw tuin of gazon nieuw leven in te blazen? Zoek niet verder! Wij bieden hoogwaardig gras aan dat geschikt is voor elke buitenruimte. Ons gras is zorgvuldig gekweekt en geselecteerd om de beste kwaliteit en duurzaamheid te garanderen.
+                            
+                            **Waarom kiezen voor ons gras?**
+                            
+                            1. **Dichte Groeistructuur**: Ons gras groeit dicht en gelijkmatig, waardoor kale plekken en onkruid minder kans krijgen.
+                            2. **Diepe Groene Kleur**: De prachtige, diepe groene kleur van ons gras zorgt voor een aantrekkelijke en uitnodigende buitenruimte.
+                            3. **Weerbestendig**: Ons gras is bestand tegen diverse weersomstandigheden, van hete zomers tot koude winters.
+                            4. **Onderhoudsvriendelijk**: Met minimale inspanning blijft uw gazon het hele jaar door prachtig.
+                            
+                            Of u nu een nieuwe tuin aanlegt, uw bestaande gazon wilt opfrissen of een sportveld wilt onderhouden, ons gras biedt de perfecte oplossing. Neem vandaag nog contact met ons op voor meer informatie en transformeer uw buitenruimte in een groen paradijs!
+                        </p>
+                        <button data-product="item2" id="js--ATCbutton1" class="ATCbut" type="button">add to cart</button>
+                        <button id="js--sect2mod1-buttonClose" type="button">terug</button>
+                    </div>
                 </div>
-                <div class="body__box2">
+            </dialog>
+            <button data-title="keyboard" id="js--names js--sect2mod2-buttonOpen" class="section2__items modBut">
+                <img src="images/keyboard.webp" alt="foto van een keyboard">
+                <h2>keyboard</h2>
+            </button>
+            <dialog id="js--sect2mod2">
+                <div class="modal__content">
+                    <img src="images/keyboard.webp" alt="foto van een keyboard">
+                    <div>
+                        <h2>keyboard</h2>
+                        <p>**Te Koop: Hoogwaardig Mechanisch Toetsenbord voor Enthousiaste Gebruikers**
 
+                            Bent u op zoek naar een toetsenbord dat uw productiviteit en gaming-ervaring naar een hoger niveau tilt? Zoek niet verder! Wij bieden een hoogwaardig mechanisch toetsenbord aan dat perfect is voor zowel intensief werk als plezierige gaming-sessies.
+                            
+                            Dit toetsenbord is uitgerust met duurzame mechanische switches die zijn ontworpen voor een soepele en responsieve toetsaanslag. Elke toets is voorzien van individuele LED-verlichting, waardoor u uw toetsenbord naar wens kunt aanpassen en het een stijlvolle uitstraling krijgt, zelfs in donkere omgevingen.
+                            
+                            Het ergonomische ontwerp zorgt ervoor dat u comfortabel kunt typen, zelfs tijdens lange sessies. De verstelbare pootjes en afneembare polssteun bieden extra comfort en ondersteuning. Daarnaast is dit toetsenbord voorzien van anti-ghosting en N-key rollover, wat betekent dat elke toetsaanslag nauwkeurig wordt geregistreerd, ongeacht hoe snel u typt of speelt.
+                            
+                            Met programmeerbare toetsen en macro-ondersteuning kunt u uw toetsenbord volledig personaliseren om aan uw specifieke behoeften te voldoen. Of u nu complexe spelcommando’s wilt programmeren of sneltoetsen voor uw werkapplicaties wilt instellen, dit toetsenbord biedt de flexibiliteit die u nodig heeft.
+                            
+                            Kortom, dit mechanische toetsenbord combineert functionaliteit, duurzaamheid en stijl in één indrukwekkend pakket. Mis deze kans niet om uw werk- en speelervaring te verbeteren. Neem vandaag nog contact met ons op voor meer informatie of om een bestelling te plaatsen!
+                        </p>
+                        <button data-product="item3" id="js--ATCbutton1" class="ATCbut" type="button">add to cart</button>
+                        <button id="js--sect2mod2-buttonClose" type="button">terug</button>
+                    </div>
                 </div>
-                <div class="body__box2">
+            </dialog>
+            <button data-title="sleutels" id="js--names js--sect2mod3-buttonOpen" class="section2__items modBut">
+                <img src="images/keys.webp" alt="foto van gestolen sleutels">
+                <h2>sleutels</h2>
+            </button>
+            <dialog id="js--sect2mod3">
+                <div class="modal__content">
+                    <img src="images/keys.webp" alt="foto van gestolen sleutels">
+                    <div>
+                        <h2>sleutels</h2>
+                        <p>Het verkopen van gestolen sleutels is een illegale en immorele activiteit die ernstige juridische en ethische consequenties met zich meebrengt. Deze sleutels kunnen variëren van fysieke sleutels tot digitale sleutels, zoals softwarelicenties of encryptiesleutels. De verkoop van dergelijke sleutels gebeurt vaak op de zwarte markt, via ondergrondse netwerken of illegale online marktplaatsen.
 
+                            Gestolen fysieke sleutels kunnen toegang verschaffen tot huizen, auto's, kluizen of andere beveiligde locaties. Digitale sleutels daarentegen kunnen toegang geven tot gevoelige informatie, bedrijfsnetwerken, of waardevolle software. Het handelen in deze sleutels is niet alleen een inbreuk op de privacy en veiligheid van de eigenaren, maar kan ook leiden tot aanzienlijke financiële schade.
+                            
+                            Verkopers van gestolen sleutels gebruiken vaak anonieme communicatiekanalen en betalen in cryptovaluta om detectie te vermijden. Ze richten zich op potentiële kopers die bereid zijn hoge prijzen te betalen voor directe toegang tot waardevolle bezittingen of informatie. Deze illegale handel is strafbaar en kan leiden tot zware straffen, waaronder gevangenisstraf en hoge boetes.
+                            
+                            Het is cruciaal om bewust te zijn van de legaliteit en ethische implicaties van dergelijke activiteiten. Het bevorderen of deelnemen aan de handel in gestolen sleutels draagt bij aan criminaliteit en schaadt individuen en organisaties ernstig.
+                        </p>
+                        <button data-product="item4" id="js--ATCbutton1" class="ATCbut" type="button">add to cart</button>
+                        <button id="js--sect2mod3-buttonClose" type="button">terug</button>
+                    </div>
                 </div>
-                <div class="body__box2">
+            </dialog>
+            <button data-title="pen" id="js--names js--sect2mod4-buttonOpen" class="section2__items modBut">
+                <img src="images/pen.webp" alt="foto van een pen">
+                <h2>pen</h2>
+            </button>
+            <dialog id="js--sect2mod4">
+                <div class="modal__content">
+                    <img src="images/pen.webp" alt="foto van een pen">
+                    <div>
+                        <h2>pen</h2>
+                        <p>Stel je voor: een pen die niet alleen schrijft, maar inspireert. Onze luxe pen combineert elegantie met ongeëvenaarde functionaliteit, waardoor het een onmisbaar instrument is voor elke professional en liefhebber van fijn schrijfgerij.
 
+                            Deze pen is vervaardigd uit hoogwaardige materialen die duurzaamheid garanderen en tegelijkertijd een luxueus gevoel geven. Het slanke, ergonomische ontwerp ligt comfortabel in de hand, waardoor langdurig schrijven moeiteloos wordt. De naadloze balans tussen gewicht en grip maakt elke pennenstreek nauwkeurig en vloeiend.
+                            
+                            Met een precisiemechanisme en een soepele schrijfpunt biedt deze pen een ongeëvenaarde schrijfervaring. Of je nu notities maakt tijdens een belangrijke vergadering, een persoonlijke brief schrijft, of schetsen maakt, de inkt vloeit gelijkmatig en droogt snel, zonder vlekken of uitlopen.
+                            
+                            Het esthetische design is zowel klassiek als modern, met subtiele details die het een tijdloze uitstraling geven. Verkrijgbaar in verschillende kleuren en afwerkingen, is er altijd een variant die past bij jouw persoonlijke stijl.
+                            
+                            Onze pen wordt geleverd in een stijlvolle, beschermende doos, wat het ook een perfect cadeau maakt voor speciale gelegenheden. Investeer in een pen die niet alleen functioneel is, maar ook een statement maakt. Ervaar zelf de luxe en kwaliteit van onze unieke pen en transformeer elk geschreven woord in een kunstwerk.
+                        </p>
+                        <button data-product="item5" id="js--ATCbutton1" class="ATCbut" type="button">add to cart</button>
+                        <button id="js--sect2mod4-buttonClose" type="button">terug</button>
+                    </div>
                 </div>
-            </div>
-            <div class="body__box-wrapper">
-                <div class="body__box3">
-                    <img src="images/Untitled.png" alt="">
-                    <p>filler tekst</p>
-                </div>
-                <div class="body__box3">
-                    <img src="images/Untitled.png" alt="">
-                    <p>filler tekst</p>
-                </div>
-                <div class="body__box3">
-                    <img src="images/Untitled.png" alt="">
-                    <p>filler tekst</p>
-                </div>
-                <div class="body__box3">
-                    <img src="images/Untitled.png" alt="">
-                    <p>filler tekst</p>
-                </div>
-            </div>
+            </dialog>
         </section>
-        <footer>
-            <p>
-                fefefefefefevrbrbgrbrb
-            </p>
-        </footer>
+        <section class="body__section body__section3">
+            <button data-section="apple" id="js--names js--sect3mod1-buttonOpen" class="sect3__items sect3mod1">
+                <img src="images/apple.webp" alt="foto van een apple">
+                <p>Ontdek de frisse, knapperige heerlijkheid van onze premium appels! Deze sappige vruchten zijn zorgvuldig geselecteerd uit de beste boomgaarden en belichamen het toppunt van smaak en kwaliteit. Elke appel wordt met de hand geplukt op het perfecte moment van rijpheid om ervoor te zorgen dat je alleen het beste krijgt.</p>
+            </button>
+            <dialog id="js--sect3mod1">
+                <div class="modal__content">
+                    <img src="images/apple.webp" alt="foto van een apple">
+                    <div>
+                        <h2>apple</h2>
+                        <p>**Verkoopbeschrijving voor een Apple**
+
+                            Ontdek de frisse, knapperige heerlijkheid van onze premium appels! Deze sappige vruchten zijn zorgvuldig geselecteerd uit de beste boomgaarden en belichamen het toppunt van smaak en kwaliteit. Elke appel wordt met de hand geplukt op het perfecte moment van rijpheid om ervoor te zorgen dat je alleen het beste krijgt.
+                            
+                            Onze appels hebben een levendige, glanzende schil die varieert van een stralend rood tot een zonnig geel, vaak met een vleugje groen. Het stevige vruchtvlees is heerlijk krokant en biedt een verfrissende, sappige beet die zowel zoet als licht zuur is, perfect in balans.
+                            
+                            Deze appels zijn niet alleen een verrukking voor je smaakpapillen, maar ook een gezonde keuze voor elke dag. Rijk aan vezels, vitaminen en antioxidanten, ondersteunen ze een gezonde levensstijl en zijn ze een fantastische snack voor onderweg, een aanvulling op je ontbijt, of een knapperige toevoeging aan salades en desserts.
+                            
+                            Of je nu een enkele appel nodig hebt voor een snelle snack of een hele mand voor een gezinsbijeenkomst, onze appels staan klaar om te voldoen aan jouw culinaire behoeften. Proef vandaag nog het verschil en geniet van de pure, natuurlijke smaak van een perfecte appel.
+                        </p>
+                        <button data-product="item6" id="js--ATCbutton1" class="ATCbut" type="button">add to cart</button>
+                        <button id="js--sect3mod1-buttonClose" type="button">terug</button>
+                    </div>
+                </div>
+            </dialog>
+            <button data-title="sausage" id="js--names js--sect3mod2-buttonOpen" class="sect3__items sect3mod2">
+                <img src="images/sausage.webp" alt="foto van een sausage">
+                <p>Stap binnen in een wereld van uitzonderlijke smaak en kwaliteit met onze premium worst. Gemaakt van de beste ingrediënten, biedt deze sappige traktatie een unieke ervaring voor elke fijnproever. Onze worst wordt met zorg en vakmanschap vervaardigd, met een perfecte balans van kruiden en specerijen die de natuurlijke smaken naar voren brengen.</p>
+            </button>
+            <dialog id="js--sect3mod2">
+                <div class="modal__content">
+                    <img src="images/sausage.webp" alt="foto van een sausage">
+                    <div>
+                        <h2>sausage</h2>
+                        <p>**Ontdek de Smaak van Perfectie met Onze Premium Worst!**
+
+                            Stap binnen in een wereld van uitzonderlijke smaak en kwaliteit met onze premium worst. Gemaakt van de beste ingrediënten, biedt deze sappige traktatie een unieke ervaring voor elke fijnproever. Onze worst wordt met zorg en vakmanschap vervaardigd, met een perfecte balans van kruiden en specerijen die de natuurlijke smaken naar voren brengen.
+                            
+                            Elke hap van onze worst onthult de toewijding aan kwaliteit die ons product zo bijzonder maakt. We gebruiken uitsluitend vers, lokaal vlees, gecombineerd met een geheim kruidenmengsel dat onze worst zijn karakteristieke en onweerstaanbare smaak geeft. Het resultaat is een sappige, smaakvolle worst die zich onderscheidt van de rest.
+                            
+                            Onze worst is veelzijdig en ideaal voor elke gelegenheid. Of je nu een gezellige barbecue organiseert, een feestelijk diner plant, of gewoon op zoek bent naar een smakelijke toevoeging aan je dagelijkse maaltijden, onze worst biedt altijd een verrukkelijke oplossing. Geniet ervan gegrild, gebakken of gestoofd; de mogelijkheden zijn eindeloos.
+                            
+                            Verwen jezelf en je gasten met de beste worst die de markt te bieden heeft. Proef het verschil en laat je verrassen door de rijke, volle smaak en de onweerstaanbare textuur van onze premium worst. Kwaliteit en smaak komen samen in elk stuk – een echte culinaire belevenis die je niet wilt missen!
+                        </p>
+                        <button data-product="item7" id="js--ATCbutton1" class="ATCbut" type="button">add to cart</button>
+                        <button id="js--sect3mod2-buttonClose" type="button">terug</button>
+                    </div>
+                </div>
+            </dialog>
+        </section>
     </main>
+    <footer>
+        <p>
+            webshop gemaakt bij - Liam DeCamp
+        </p>
+    </footer>
 </body>
 
 </html>
